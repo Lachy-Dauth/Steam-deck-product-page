@@ -8,18 +8,22 @@
   <link rel="stylesheet" href="./styles.css">
 </head>
 <body>
-  <nav>
-    <a href="https://store.steampowered.com/steamdeck" class="button">Buy Now</a>
-    <a href="#fetures-div" class="button">Fetures</a>
-    <a href="#models-div" class="button">Models</a>
-    <a href="https://store.steampowered.com/" class="button">Steam</a>
-    <a href="https://github.com/Lachy-Dauth/" class="button">Lachy's GitHub</a>
-  </nav>
+  <header id="header">
+    <img src="https://cdn.freebiesupply.com/images/large/2x/steam-logo-black-transparent.png" alt="" class="logo" id="header-img">
+    <h1>Steam Deck</h1>
+    <nav id="nav-bar">
+      <a href="https://store.steampowered.com/steamdeck" class="nav-site">Buy Now</a>
+      <a href="#features-div" class="nav-link">Features</a>
+      <a href="#models-div" class="nav-link">Models</a>
+      <a href="#form" class="nav-link">Form</a>
+      <a href="https://store.steampowered.com/" class="nav-site">Steam</a>
+      <a href="https://github.com/Lachy-Dauth/" class="nav-site">Lachy's GitHub</a>
+    </nav>
+  </header>
   <main>
-    <video loop="true" autoplay="true" id="header-video">
+    <video loop="true" autoplay="true" id="video">
       <source src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/hero_banner_sequence_colored_r03_1080p_h264_9MB.mp4">
     </video>
-    <h1>Steam Deck</h1>
     <div id="models-div">
       <h2 id="models-heading">Our models</h2>
       <p class="description">Steam Deck is available to reserve now in select regions and has begun shipping to customers in the order reservations were made. Choose which version to reserve below. When inventory is available, you will receive an email and will have 72 hours to complete your purchase.</p>
@@ -54,6 +58,43 @@
         </div>
       </div>
     </div>
+    <br>
+    <div id="features-div">
+      <video loop="true" autoplay="true" class="video-ani" id="video-ani-1">
+        <source src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/cpu.mp4">
+      </video>
+      <div class="feature" id="text-1">
+        <h2>Portability meets power</h2>
+        <p>We partnered with AMD to create Steam Deck's custom APU, optimized for handheld gaming. It is a Zen 2 + RDNA 2 powerhouse, delivering more than enough performance to run the latest AAA games in a very efficient power envelope.</p>
+      </div>
+      <video loop="true" autoplay="true" class="video-ani" id="video-ani-2">
+        <source src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/library-image-sequence.mp4">
+      </video>
+      <div class="feature" id="text-2">
+        <h2>Your Steam Library, anywhere</h2>
+        <p>Once you've logged into Steam Deck, your entire Steam Library shows up, just like any other PC. You'll also see the compatibility rating of each game, indicating the kind of experience you can expect when playing. You can dynamically filter any view in your library by compatibility rating if you're looking for specific sorts of experiences.</p>
+      </div>
+      <video loop="true" autoplay="true" class="video-ani" id="video-ani-3">
+        <source src="https://cdn.cloudflare.steamstatic.com/steamdeck/images/video/thumbstick.mp4">
+      </video>
+      <div class="feature" id="text-3">
+        <h2>Control with comfort</h2>
+        <p>The Steam Deck was built for extended play sessions—whether you're using thumbsticks or trackpads—with full-size controls positioned perfectly within your reach. The rear of the device is sculpted to comfortably fit a wide range of hand sizes.</p>
+      </div>
+    </div>
+    <br>
+
+    <div id="form-div">
+      <form id="form" action="https://www.freecodecamp.com/email-submit">
+        <label for="email">Email: </label>
+        <input type="email" name="email" id="email" placeholder="Enter your email here">
+        <input type="submit" name="submit" id="submit">
+      </form>
+    </div>
+    <br><br><br>
   </main>
+  <footer>
+    Please visit my <a href="https://github.com/Lachy-Dauth/">GitHub</a>
+  </footer>
 </body>
 </html>
