@@ -99,6 +99,7 @@ nav {
   background-image: linear-gradient(to bottom right, blue, purple);
   display: flex;
   padding: 10px;
+  padding-top: 50px;
   flex-direction: column;
 }
 
@@ -166,6 +167,7 @@ h2 {
   display: grid;
   margin-top: -20px;
   padding: 10px;
+  padding-top: 50px;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: repeat(3, minmax(200px, auto));
   grid-column-gap: 10px;
