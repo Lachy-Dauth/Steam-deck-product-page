@@ -169,7 +169,7 @@ h2 {
   padding: 10px;
   padding-top: 50px;
   grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(3, minmax(200px, auto));
+  grid-template-rows: repeat(3, minmax(200px, fit-content));
   grid-column-gap: 10px;
   grid-row-gap: 10px;
   background-color: white;
@@ -235,7 +235,7 @@ h2 {
 @media (max-width: 700px) {
   #features-div {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(6, 200px);
+    grid-template-rows: repeat(6, fit-content);
     grid-column-gap: 10px;
     grid-row-gap: 10px;
   }
@@ -253,5 +253,9 @@ h2 {
   
   #text-3 {
     order: 6;
+  }
+
+  .video-ani { 
+    max-height: 300px;
   }
 }
